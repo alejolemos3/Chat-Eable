@@ -1,0 +1,24 @@
+@import "vars";
+
+.chat-header {
+  display: flex;
+  gap: 10px;
+  height: 20px;
+  background-color: var(--light-blue);
+  color: white;
+  padding: 20px;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chat-header div {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat-header div img {
+  width: 100%;
+}

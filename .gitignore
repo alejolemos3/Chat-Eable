@@ -1,3 +1,4 @@
 .babelrc
 native-version/
 node_modules/
+server/

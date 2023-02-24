@@ -1,14 +1,18 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from '@pages/Home';
+import Home from "@pages/Home";
 
-import '@styles/global.css';
+import "@styles/global.css";
 
 const App = () => {
   return (
-    <Home />
-  )
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;

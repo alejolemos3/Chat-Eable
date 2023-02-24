@@ -1,9 +1,9 @@
-import React from "react";
-import Chat from '@containers/Chat';
+import React, { useState } from "react";
+import ChatInterface from '@containers/ChatInterface';
 
 const Home = () => {
     return (
-        <Chat />
+        <ChatInterface />
     );
 };
 

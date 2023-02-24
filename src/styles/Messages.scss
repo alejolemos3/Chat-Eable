@@ -1,0 +1,44 @@
+@import "vars";
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+.Messages {
+  height: 80vh;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 10px;
+  background: url("../assets/wallpaper.jpg") center center;
+  overflow: auto;
+}
+
+.message-container {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.send {
+  background-color: var(--light-blue);
+  color: white;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: var(--grey);
+  align-self: flex-start;
+}
+
+.message-content {
+  overflow-wrap: break-word;
+}
+
+.message-time {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 5px;
+}

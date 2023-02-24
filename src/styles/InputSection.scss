@@ -1,0 +1,35 @@
+@import "vars";
+
+.InputSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: #f2f2f2;
+}
+
+.InputSection input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.InputSection button {
+  background-color: var(--light-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.img-input-label {
+  width: 40px;
+  height: 40px;
+}
+
+#img-input {
+  display: none;
+}

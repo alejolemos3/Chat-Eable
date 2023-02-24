@@ -13,16 +13,17 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
     alias: {
-        '@components': path.resolve(__dirname, 'src/components/'),
-        '@containers': path.resolve(__dirname, 'src/containers/'),
-        '@pages': path.resolve(__dirname, 'src/pages/'),
-        '@routes': path.resolve(__dirname, 'src/routes/'),
-        '@styles': path.resolve(__dirname, 'src/styles/'),
-        '@icons': path.resolve(__dirname, 'src/assets/icons/'),
-        '@logos': path.resolve(__dirname, 'src/assets/logos/'),
-        '@hooks': path.resolve(__dirname, 'src/hooks'),
-        '@context': path.resolve(__dirname, 'src/context'),
-    }
+      "@assets": path.resolve(__dirname, "src/assets/"),
+      "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
+      "@pages": path.resolve(__dirname, "src/pages/"),
+      "@routes": path.resolve(__dirname, "src/routes/"),
+      "@styles": path.resolve(__dirname, "src/styles/"),
+      "@icons": path.resolve(__dirname, "src/assets/icons/"),
+      "@logos": path.resolve(__dirname, "src/assets/logos/"),
+      "@hooks": path.resolve(__dirname, "src/hooks"),
+      "@context": path.resolve(__dirname, "src/context"),
+    },
   },
   module: {
     rules: [
@@ -47,8 +48,8 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gis|)$/,
-        type: 'asset'
-      }
+        type: "asset",
+      },
     ],
   },
   plugins: [
