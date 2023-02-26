@@ -30,7 +30,7 @@ const ChatInterface = () => {
     },
     otherUserId === null ? 50 : null
   );
-  const receiveMessage = () => {
+  const receiveMessage = (z) => {
     fetch(`http://192.168.0.161:3000/message/${userId}`).then((res) => {
       if (res.ok) {
         res.text().then((message) => {

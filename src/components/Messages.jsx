@@ -11,7 +11,7 @@ const Messages = ({ messages }) => {
   const getTime = (message) => {
     const date = new Date(message.date);
     return `${date.getHours() % 12 || 12}:${
-      date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes
+      date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes()
     } ${date.getHours() < 12 ? "AM" : "PM"}`;
   };
 
